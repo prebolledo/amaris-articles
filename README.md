@@ -3,7 +3,7 @@
 
 ## Inicializar
 
-debes estar ubicado en el projecto
+debes estar ubicado en el proyecto
 
 ```sh
 npm start

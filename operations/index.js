@@ -16,10 +16,11 @@ const add = article => {
 }
 
 const remove = id => {
-    let indexOfArticle = 0
-
-    articles.splice(indexOfArticle,1)
-    return true
+    let indexOfArticle = articles.findIndex(article => article.id == id)
+    if(indexOfArticle >= 0){
+        articles.splice(indexOfArticle,1)
+    }
+    return indexOfArticle >= 0
 }
 
 export default {
